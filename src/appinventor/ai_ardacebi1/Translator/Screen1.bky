@@ -1,0 +1,968 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="1" x="-350" y="-51">
+    <mutation component_type="ListPicker" instance_name="ChooseLanguage1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="2" inline="false">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+        <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="3">
+            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+            <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+            <field name="PROP">Selection</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="4" x="-16" y="-5">
+    <mutation component_type="ListPicker" instance_name="ChooseLanguage2" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+    <statement name="DO">
+      <block type="component_set_get" id="5" inline="false">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+        <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="6">
+            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+            <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+            <field name="PROP">Selection</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="7" x="2058" y="-76">
+    <mutation component_type="Button" instance_name="talkbutton1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">talkbutton1</field>
+    <statement name="DO">
+      <block type="controls_if" id="8" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="9">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="10">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="11">
+                <field name="TEXT">en</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="12" inline="false">
+            <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+            <field name="PROP">Language</field>
+            <value name="VALUE">
+              <block type="text" id="13">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="14" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="15">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="16">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="17">
+                    <field name="TEXT">it</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="18" inline="false">
+                <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                <field name="PROP">Language</field>
+                <value name="VALUE">
+                  <block type="text" id="19">
+                    <field name="TEXT">IT</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="20" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="21">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="22">
+                        <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                        <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                        <field name="PROP">Selection</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="23">
+                        <field name="TEXT">tr</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="24" inline="false">
+                    <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                    <field name="PROP">Language</field>
+                    <value name="VALUE">
+                      <block type="text" id="25">
+                        <field name="TEXT">TR</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="controls_if" id="26" inline="false">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="27">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="component_set_get" id="28">
+                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                            <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                            <field name="PROP">Selection</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="29">
+                            <field name="TEXT">es</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="component_set_get" id="30" inline="false">
+                        <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                        <field name="PROP">Language</field>
+                        <value name="VALUE">
+                          <block type="text" id="31">
+                            <field name="TEXT">ES</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="controls_if" id="32" inline="false">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="33">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="component_set_get" id="34">
+                                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                                <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                                <field name="PROP">Selection</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id="35">
+                                <field name="TEXT">zh</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="component_set_get" id="36" inline="false">
+                            <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                            <field name="PROP">Language</field>
+                            <value name="VALUE">
+                              <block type="text" id="37">
+                                <field name="TEXT">ZH</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="controls_if" id="38" inline="false">
+                            <mutation else="1"></mutation>
+                            <value name="IF0">
+                              <block type="logic_compare" id="39">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="40">
+                                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                                    <field name="PROP">Selection</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="41">
+                                    <field name="TEXT">pt</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_set_get" id="42" inline="false">
+                                <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                <field name="PROP">Language</field>
+                                <value name="VALUE">
+                                  <block type="text" id="43">
+                                    <field name="TEXT">PT</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block type="controls_if" id="44" inline="false">
+                                <mutation else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="45">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="component_set_get" id="46">
+                                        <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                                        <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                                        <field name="PROP">Selection</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="text" id="47">
+                                        <field name="TEXT">fr</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="component_set_get" id="48" inline="false">
+                                    <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                    <field name="PROP">Language</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="49">
+                                        <field name="TEXT">FR</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="controls_if" id="50" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="51">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="component_set_get" id="52">
+                                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                                            <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                                            <field name="PROP">Selection</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="text" id="53">
+                                            <field name="TEXT">ru</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="component_set_get" id="54" inline="false">
+                                        <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                        <field name="PROP">Language</field>
+                                        <value name="VALUE">
+                                          <block type="text" id="55">
+                                            <field name="TEXT">RU</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="component_method" id="56" inline="false">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="TextToSpeech1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+            <value name="ARG0">
+              <block type="component_set_get" id="57">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="TranslationBox1"></mutation>
+                <field name="COMPONENT_SELECTOR">TranslationBox1</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="58" x="713" y="-2">
+    <mutation component_type="YandexTranslate" instance_name="YandexTranslate1" event_name="GotTranslation"></mutation>
+    <field name="COMPONENT_SELECTOR">YandexTranslate1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="59" inline="false">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="TranslationBox1"></mutation>
+        <field name="COMPONENT_SELECTOR">TranslationBox1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="60">
+            <mutation>
+              <eventparam name="translation"></eventparam>
+            </mutation>
+            <field name="VAR">translation</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="61" x="-346" y="91">
+    <mutation component_type="Button" instance_name="MicButton345345" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">MicButton345345</field>
+    <statement name="DO">
+      <block type="controls_if" id="62" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="text_isEmpty" id="63" inline="false">
+            <value name="VALUE">
+              <block type="component_set_get" id="64">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="65" inline="false">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="66">
+                <field name="TEXT">Choose language before speaking for you to make translations</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="67" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="text_isEmpty" id="68" inline="false">
+                <value name="VALUE">
+                  <block type="component_set_get" id="69">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="70" inline="false">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="71">
+                    <field name="TEXT">Choose 2nd language before speaking for you to make translations</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="component_method" id="72">
+                <mutation component_type="SpeechRecognizer" method_name="GetText" is_generic="false" instance_name="SpeechRecognizer1"></mutation>
+                <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="73" x="1280" y="19">
+    <mutation component_type="Button" instance_name="TalkButton4353" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">TalkButton4353</field>
+    <statement name="DO">
+      <block type="controls_if" id="74" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="75">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="76">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="77">
+                <field name="TEXT">en</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="78" inline="false">
+            <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+            <field name="PROP">Language</field>
+            <value name="VALUE">
+              <block type="text" id="79">
+                <field name="TEXT">EN</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="80" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="81">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="82">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="83">
+                    <field name="TEXT">it</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="84" inline="false">
+                <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                <field name="PROP">Language</field>
+                <value name="VALUE">
+                  <block type="text" id="85">
+                    <field name="TEXT">IT</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="86" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="87">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_set_get" id="88">
+                        <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                        <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                        <field name="PROP">Selection</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="89">
+                        <field name="TEXT">tr</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="90" inline="false">
+                    <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                    <field name="PROP">Language</field>
+                    <value name="VALUE">
+                      <block type="text" id="91">
+                        <field name="TEXT">TR</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="controls_if" id="92" inline="false">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="93">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="component_set_get" id="94">
+                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                            <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                            <field name="PROP">Selection</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="95">
+                            <field name="TEXT">es</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="component_set_get" id="96" inline="false">
+                        <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                        <field name="PROP">Language</field>
+                        <value name="VALUE">
+                          <block type="text" id="97">
+                            <field name="TEXT">ES</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="controls_if" id="98" inline="false">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id="99">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="component_set_get" id="100">
+                                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                                <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                                <field name="PROP">Selection</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id="101">
+                                <field name="TEXT">zh</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="component_set_get" id="102" inline="false">
+                            <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                            <field name="PROP">Language</field>
+                            <value name="VALUE">
+                              <block type="text" id="103">
+                                <field name="TEXT">ZH</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="controls_if" id="104" inline="false">
+                            <mutation else="1"></mutation>
+                            <value name="IF0">
+                              <block type="logic_compare" id="105">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="106">
+                                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                                    <field name="PROP">Selection</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="107">
+                                    <field name="TEXT">pt</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_set_get" id="108" inline="false">
+                                <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                <field name="PROP">Language</field>
+                                <value name="VALUE">
+                                  <block type="text" id="109">
+                                    <field name="TEXT">PT</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block type="controls_if" id="110" inline="false">
+                                <mutation else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="111">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="component_set_get" id="112">
+                                        <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                                        <field name="PROP">Selection</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="text" id="113">
+                                        <field name="TEXT">fr</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="component_set_get" id="114" inline="false">
+                                    <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                    <field name="PROP">Language</field>
+                                    <value name="VALUE">
+                                      <block type="text" id="115">
+                                        <field name="TEXT">FR</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="controls_if" id="116" inline="false">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="117">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="component_set_get" id="118">
+                                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                                            <field name="PROP">Selection</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="text" id="119">
+                                            <field name="TEXT">ru</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="component_set_get" id="120" inline="false">
+                                        <mutation component_type="TextToSpeech" set_or_get="set" property_name="Language" is_generic="false" instance_name="TextToSpeech1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+                                        <field name="PROP">Language</field>
+                                        <value name="VALUE">
+                                          <block type="text" id="121">
+                                            <field name="TEXT">RU</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="component_method" id="122" inline="false">
+            <mutation component_type="TextToSpeech" method_name="Speak" is_generic="false" instance_name="TextToSpeech1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextToSpeech1</field>
+            <value name="ARG0">
+              <block type="component_set_get" id="123">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TranslationBox"></mutation>
+                <field name="COMPONENT_SELECTOR">TranslationBox</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="124" x="614" y="167">
+    <mutation component_type="SpeechRecognizer" instance_name="SpeechRecognizer1" event_name="AfterGettingText"></mutation>
+    <field name="COMPONENT_SELECTOR">SpeechRecognizer1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="125" inline="false">
+        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="TranslationBox"></mutation>
+        <field name="COMPONENT_SELECTOR">TranslationBox</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="126">
+            <mutation>
+              <eventparam name="result"></eventparam>
+            </mutation>
+            <field name="VAR">result</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="127" inline="false">
+            <mutation component_type="YandexTranslate" method_name="RequestTranslation" is_generic="false" instance_name="YandexTranslate1"></mutation>
+            <field name="COMPONENT_SELECTOR">YandexTranslate1</field>
+            <value name="ARG0">
+              <block type="text_join" id="128" inline="false">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="component_set_get" id="129">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="130">
+                    <field name="TEXT">-</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="component_set_get" id="131">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="132">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TranslationBox"></mutation>
+                <field name="COMPONENT_SELECTOR">TranslationBox</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="133" x="-338" y="394">
+    <mutation component_type="Button" instance_name="TranslateButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">TranslateButton</field>
+    <statement name="DO">
+      <block type="controls_if" id="134" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="text_isEmpty" id="135" inline="false">
+            <value name="VALUE">
+              <block type="component_set_get" id="136">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="137" inline="false">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="138">
+                <field name="TEXT">Choose language for you to make translations</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_if" id="139" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="text_isEmpty" id="140" inline="false">
+                <value name="VALUE">
+                  <block type="component_set_get" id="141">
+                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="142" inline="false">
+                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="143">
+                    <field name="TEXT">Choose 2nd language for you to make translations</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="144" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="text_isEmpty" id="145" inline="false">
+                    <value name="VALUE">
+                      <block type="component_set_get" id="146">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TranslationBox"></mutation>
+                        <field name="COMPONENT_SELECTOR">TranslationBox</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_method" id="147" inline="false">
+                    <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="148">
+                        <field name="TEXT">Please Write a Word or Sentence to the Translation box for you to make translations</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="component_method" id="149" inline="false">
+                    <mutation component_type="YandexTranslate" method_name="RequestTranslation" is_generic="false" instance_name="YandexTranslate1"></mutation>
+                    <field name="COMPONENT_SELECTOR">YandexTranslate1</field>
+                    <value name="ARG0">
+                      <block type="text_join" id="150" inline="false">
+                        <mutation items="3"></mutation>
+                        <value name="ADD0">
+                          <block type="component_set_get" id="151">
+                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                            <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                            <field name="PROP">Selection</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="text" id="152">
+                            <field name="TEXT">-</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="component_set_get" id="153">
+                            <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                            <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                            <field name="PROP">Selection</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="component_set_get" id="154">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TranslationBox"></mutation>
+                        <field name="COMPONENT_SELECTOR">TranslationBox</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="component_method" id="155">
+            <mutation component_type="Form" method_name="HideKeyboard" is_generic="false" instance_name="Screen1"></mutation>
+            <field name="COMPONENT_SELECTOR">Screen1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="156" x="610" y="402">
+    <mutation component_type="Button" instance_name="SwipeLanguageButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">SwipeLanguageButton</field>
+    <statement name="DO">
+      <block type="component_method" id="157" inline="false">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="158">
+            <field name="TEXT">text1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="component_set_get" id="159">
+            <mutation component_type="ListPicker" set_or_get="get" property_name="Text" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+            <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="160" inline="false">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="161">
+                <field name="TEXT">text2</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="162">
+                <mutation component_type="ListPicker" set_or_get="get" property_name="Text" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="163" inline="false">
+                <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="ChooseLanguage1"></mutation>
+                <field name="COMPONENT_SELECTOR">ChooseLanguage1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="component_method" id="164" inline="false">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="165">
+                        <field name="TEXT">text2</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="166">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="167" inline="false">
+                    <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="ChooseLanguage2"></mutation>
+                    <field name="COMPONENT_SELECTOR">ChooseLanguage2</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="component_method" id="168" inline="false">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="169">
+                            <field name="TEXT">text1</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="170">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="159" language-version="20"></yacodeblocks>
+</xml>
